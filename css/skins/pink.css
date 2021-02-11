@@ -1,0 +1,17 @@
+:root{
+    --default-color:#fa5b0f;
+}
+.aside .logo a::before{
+    border-top: 4px solid var(--default-color);
+    border-left: 4px solid var(--default-color);;
+}
+.aside .logo a::after{
+    border-bottom: 4px solid var(--default-color);
+    border-right: 4px solid var(--default-color);;
+}
+.aside .nav li a:hover,.aside .nav li a.active{
+    color: var(--default-color);
+}
+.aside .nav-toggler span{
+    background: var(--default-color);
+}

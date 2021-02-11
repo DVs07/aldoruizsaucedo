@@ -41,6 +41,16 @@
 .main-content{
     padding-left: 270px;
 }
+.container{
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 0 30px;
+}
+.shadow-dark{
+    -webkit-box-shadow: 0 0 20px rgba(48,46,77,0.15);
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
 /*Aside*/
 .aside{
     width: 270px;
@@ -86,7 +96,7 @@
 }
 .aside .nav-toggler{
     height: 40px;
-    width: 45px;
+    width: 40px;
     border: 1px solid var(--border-light-color);
     cursor: pointer;
     position: fixed;
@@ -95,8 +105,9 @@
     z-index: 11;
     border-radius: 5px;
     background: var(--aside-color);
-    display: -ms-flexbox;
-    display: flex;
+    /*display: -ms-flexbox;
+    display: flex;*/
+    display: none;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: center;
@@ -104,13 +115,14 @@
 }
 .aside .nav-toggler span{
     height: 2px;
-    width: 16px;
+    width: 18px;
     display: inline-block;
+    position: relative;
 }
 .aside .nav-toggler span::before{
     content: '';
     height: 2px;
-    width: 16px;
+    width: 18px;
     position: absolute;
     top: -6px;
     left: 0;
@@ -118,9 +130,9 @@
 .aside .nav-toggler span::after{
     content: '';
     height: 2px;
-    width: 16px;
+    width: 18px;
     position: absolute;
-    top: -6px;
+    top: 6px;
     left: 0;
 }
 .aside .nav{
@@ -138,6 +150,7 @@
     border-bottom: 1px solid var(--border-light-color);
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+    text-transform: capitalize;
 }
 .aside .nav li a:not(.active):hover{
     padding-left: 5px;
@@ -151,3 +164,50 @@
 }
 
 /*Home*/
+.home{
+    min-height: 100vh;
+    display: -ms-flexbox;
+    display: flex;
+}
+.home .intro{
+    text-align: center;
+}
+.home .intro img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 8px solid #ffffff;
+}
+.home .intro h1{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    color: #302e4d;
+    font-weight: 600;
+    margin: 20px 0 5px;
+}
+.home .intro a{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 22px;
+    color: #504e70;
+}
+.home .intro .social-links{
+    margin-top: 25px;
+}
+.home .intro .social-links a {
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    text-align: center;
+    line-height: 35px;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin: 0 4px;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+.home .intro .social-links a:hover{
+    transform: scale(1.1);
+}

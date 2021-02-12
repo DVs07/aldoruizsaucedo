@@ -1,5 +1,5 @@
 :root{
-    --default-color:#fa5b0f;
+    --default-color: #1AFFD5;
 }
 .aside .logo a::before{
     border-top: 4px solid var(--default-color);
@@ -9,12 +9,14 @@
     border-bottom: 4px solid var(--default-color);
     border-right: 4px solid var(--default-color);;
 }
-.aside .nav li a:hover,.aside .nav li a.active{
+.aside .nav li a:hover,.aside .nav li a.active, .aside .logo p{
     color: var(--default-color);
 }
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
-.home .intro .social-links a {
+.home .intro .social-links a,
+.section-title h2::before,
+.section-title h2::after{
     background: var(--default-color);
 }
